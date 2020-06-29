@@ -7,16 +7,10 @@ This docker image generates all the OpenCV Java class files contained in a JAR f
 ## Usage
 
 ```sh
-$ docker run --rm -it -v $(pwd):/gen joshuamarquez/opencv-java
+$ docker run --rm -it -v $(pwd):/gen adamgyulavari/opencv-java
 ```
 
-## Copy generated files from container to host
-
-```sh
-$ cp /opencv-java-bin/* .
-```
-
-The command above copies ```opencv-300.jar``` and ```libopencv_java300.so``` to your current dir, these files are necessary to run OpenCV on Java.
+You can use this image to run Java applications that are using the OpenCV native library.
 
 ## References
 
